@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="h-96 w-full">
+      <nav class="flex items-center justify-evenly bg-black p-4">
+        <div><img class="w-12" src="./images.png" alt=""></div>
+        <div><h1 class="text-yellow-400">Document Object Model</h1></div>
+        <div>
+            <ul CLASS="flex text-yellow-700 text-sm">
+                <li class="ml-5 hover:text-cyan-400" onclick="makeCyan()">Cyan</li>
+                <li class="ml-5 hover:text-lime-500" id="lime">Lime</li>
+                <li class="ml-5 hover:text-red-400" id="emerald">Brown</li>
+                <li class="ml-5 hover:text-green-400" id="green">Lightgreen</li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer>
+      <div></div>
+      <div></div>
+      <div></div>
+    </footer>
+    <script>
+       const makeEmerald = document.getElementById('emerald');
+       makeEmerald.onclick = makeEmer;
+       function makeEmer(){
+        document.body.style.backgroundColor='brown';
+       }
+    </script>
+    <script src="index.js"></script>
+    <script src="tailwind.config.js"></script>
+  </body>
 </html>
