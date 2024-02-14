@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" theme = "dark">
+<html lang="en" data-theme = "light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <header class="mb-4 w-full">
       <nav class="flex items-center justify-evenly bg-black p-4">
         <div><img class="w-12" src="./images.png" alt=""></div>
-        <div><h1 class="text-yellow-400 lg:text-3xl text-xl">Document Object Model</h1></div>
+        <div><h1 class="text-yellow-400 lg:text-3xl md:text-2xl text-xl font-bold">Document Object Model</h1></div>
         <div>
             <ul CLASS="lg:flex sm:block text-yellow-700 text-sm">
                 <li class="ml-5 hover:text-cyan-400" onclick="makeCyan()">Cyan</li>
@@ -130,7 +130,7 @@
         </div>
             
       </section>
-      <aside class="flex-1 border-2 border-solid border-gray-300 rounded-md p-4 bg-white">
+      <aside class="flex-1 border-2 border-solid border-zinc-300 rounded-md p-4 mb-8 mt-10 bg-slate-800 text-amber-200">
         <h3>Area Calculation</h3>
         <p class="mt-4" id="calc-field"></p>
       </aside>
@@ -142,9 +142,7 @@
       <div></div>
     </footer>
     <script>
-       document.getElementById('green').addEventListener('click',function(){
-        document.body.style.backgroundColor='olive';
-       })
+       
     </script>
     <script src="index.js"></script>
     <script src="tailwind.config.js"></script>

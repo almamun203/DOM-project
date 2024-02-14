@@ -13,3 +13,6 @@ const makeEmerald = document.getElementById('emerald');
        function makeEmer(){
         document.body.style.backgroundColor='brown';
        }
+       document.getElementById('green').addEventListener('click',function(){
+        document.body.style.backgroundColor='olive';
+       })
