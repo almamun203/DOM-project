@@ -7,3 +7,9 @@ function(){
 function makeCyan(){
     document.body.style.backgroundColor='cyan';
 }
+
+const makeEmerald = document.getElementById('emerald');
+       makeEmerald.onclick = makeEmer;
+       function makeEmer(){
+        document.body.style.backgroundColor='brown';
+       }
