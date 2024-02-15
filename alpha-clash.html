@@ -9,12 +9,12 @@
 </head>
 <body>
     <main class="bg-black bg-[url(images/background.png)] bg-no-repeat bg-center min-h-screen">
-        <section id="home" class="py-24 hidden">
+        <section id="home" class="py-24 ">
 
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-8xl uppercase text-white font-bold">Alpha Clash Pro</h1>
                 <p class="text-white">Unleash Your Keyboard Kung fu </p>
-                <button id="play-btn" class="btn bg-white text-black">Play Now</button>
+                <button onclick="play()" id="play-btn" class="btn bg-white text-black">Play Now</button>
             </div>
         </section>
         <section id="playground" class="hidden">
@@ -23,7 +23,7 @@
                  <div class="flex justify-center">
                     <p class="bg-[#2F2941] px-6 pb-2 rounded-b-xl text-white">Don't watch keyboard while playing...</p>
                  </div>
-                <p class="text-black text-9xl font-bold text-center">f</p>
+                <p id="currentElement" class="text-black text-9xl font-bold text-center uppercase">f</p>
 
 
                 </div>
@@ -73,7 +73,7 @@
                 </button>
             </div>
         </section>
-        <section id="result" class= "flex justify-center min-h-screen items-center">
+        <section id="result" class= "flex justify-center min-h-screen items-center hidden">
             <div class="flex justify-center text-center flex-col  bg-[#FFFFFF4D] rounded-2xl p-6 space-y-4 ">
                  <div class="flex justify-center"> 
                     <h1 class="text-white text-6xl font-bold ">Score :</h1><span id="score" class="text-white font-semibold text-6xl">14</span>
@@ -88,5 +88,10 @@
 
         </section>
     </main>
+    <script>
+
+    </script>
+    <script src="./index.js"></script>
+    <script src="./utility.js"></script>
 </body>
 </html>
